@@ -21,6 +21,26 @@ p{line-height:1.65;margin:10px 0 22px}
 .mini{position:absolute;right:22px;top:18px;font-size:24px}
 #typed{min-height:220px}
 .photos{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.photos{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+
+.photos .photo{
+  width:100%;
+  height:auto;
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.photos .photo img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
 .photo{border-radius:18px;overflow:hidden;background:#f4dce7;box-shadow:...}
 
 .photo img{
