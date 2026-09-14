@@ -21,7 +21,14 @@ p{line-height:1.65;margin:10px 0 22px}
 .mini{position:absolute;right:22px;top:18px;font-size:24px}
 #typed{min-height:220px}
 .photos{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.photo{aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:#f4dce7;box-shadow:0 12px 30px #0005}
+.photo{border-radius:18px;overflow:hidden;background:#f4dce7;box-shadow:...}
+
+.photo img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+}
 .placeholder{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#a45b7a;font-size:30px;text-align:center}
 .placeholder small{font-size:10px;margin-top:6px;padding:0 5px}
 .final{text-align:center;padding:42px 24px}
