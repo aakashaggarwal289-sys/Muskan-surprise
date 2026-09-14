@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <main class="app">
+    <section class="screen active" id="home">
+      <div class="badge">A little surprise for you ✨</div>
+      <div class="card hero">
+        <div class="cake">🎂</div>
+        <h1>Hey <span data-name>My Love</span> ❤️</h1>
+        <p>I made something just for you.</p>
+        <button class="primary" onclick="showScreen('letter')">Open your surprise 💌</button>
+      </div>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="top"><button class="back" onclick="showScreen('home')">←</button><span>For <span data-name>My Love</span></span></div>
+      <div class="card letter">
+        <div class="mini">💗</div>
+        <h2>Dear <span data-name>My Love</span>,</h2>
+        <p id="typed"></p>
+        <button class="primary" onclick="showScreen('memories')">One more thing →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="memories">
+      <div class="top"><button class="back" onclick="showScreen('letter')">←</button><span>Our little memories</span></div>
+      <div class="photos">
+        <div class="photo"><div class="placeholder">📸<small>Put photo 1 here</small></div></div>
+        <div class="photo"><div class="placeholder">📸<small>Put photo 2 here</small></div></div>
+        <div class="photo"><div class="placeholder">📸<small>Put photo 3 here</small></div></div>
+      </div>
+      <div class="card">
+        <h2>My favourite thing? <span>Us. 🫶</span></h2>
+        <p>No matter how many days pass, I still choose you.</p>
+        <button class="primary" onclick="showScreen('final')">Tap for the final surprise ✨</button>
+      </div>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="card final">
+        <div class="big-heart">❤️</div>
+        <h1>I LOVE YOU, <span data-name>Muskan</span> ❤️</h1>
+        <p>More than this little website can ever explain. 🥹❤️</p>
+        <button class="primary" onclick="burst()">Send me a hug 🤗</button>
+        <p class="tiny">Made with way too much love.</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="music" loop preload="auto">
+    <!-- Optional: put your music file in this folder and change the name below. -->
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music" onclick="toggleMusic()" aria-label="Music">♫</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

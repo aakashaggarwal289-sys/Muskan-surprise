@@ -1,0 +1,27 @@
+# GF Surprise Website ❤️
+
+## 1) Change the name/message
+Open `script.js` and edit:
+- `name: "My Love"`
+- `message: \`...\``
+
+## 2) Add photos
+The easiest upgrade is to replace each `.placeholder` in `index.html` with:
+`<img src="photo1.jpg" alt="Memory">`
+and put `photo1.jpg`, `photo2.jpg`, `photo3.jpg` in the same folder.
+
+## 3) Add music (optional)
+Put an MP3 named `music.mp3` in this folder. Mobile browsers may require the user to tap the music button before audio starts.
+
+## 4) Test it
+Double-click `index.html` to open it in your browser.
+
+## 5) Put it online for free
+Use GitHub Pages:
+1. Create a free GitHub account.
+2. Create a new repository.
+3. Upload `index.html`, `style.css`, `script.js` and your photos/music.
+4. In the repository settings, enable Pages for the main branch.
+5. GitHub will give you a shareable link.
+
+Tip: You can rename the repository to something cute, but don't put private information in the URL.
