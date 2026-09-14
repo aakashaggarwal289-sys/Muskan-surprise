@@ -80,7 +80,8 @@ function updateCountdown(){
 }
 updateCountdown();
 setInterval(updateCountdown,1000);
-const bgMusic = new Audio("song.mp3");
+const bgMusic = new Audio("./Happy%20Birthday%20-%20Diljit%20Dosanjh.mp3");
+bgMusic.loop = true;
 bgMusic.loop = true;
 
 document.querySelector(".music").addEventListener("click", () => {
