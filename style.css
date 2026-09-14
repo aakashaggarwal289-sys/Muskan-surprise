@@ -34,3 +34,5 @@ p{line-height:1.65;margin:10px 0 22px}
 @keyframes beat{50%{transform:scale(1.13)}}
 @keyframes rise{to{transform:translateY(-105vh) rotate(360deg);opacity:0}}
 @media(max-height:700px){.screen{min-height:auto;padding-top:20px}.hero{padding:24px}.cake{font-size:58px}#typed{min-height:170px}}
+
+.countdown{font-weight:800;font-size:15px;letter-spacing:.02em;background:#ffffff16;border:1px solid #ffffff25;padding:10px 16px;border-radius:999px;backdrop-filter:blur(8px)}

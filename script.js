@@ -62,3 +62,21 @@ function burst(){
   for(let i=0;i<35;i++) setTimeout(heart,i*35);
   alert("Hug delivered successfully. 🤗❤️");
 }
+
+// Birthday countdown: 21 September
+function updateCountdown(){
+  const el=document.getElementById("countdown");
+  if(!el) return;
+  const now=new Date();
+  let target=new Date(now.getFullYear(),8,21,0,0,0);
+  if(now>=target) target=new Date(now.getFullYear()+1,8,21,0,0,0);
+  const diff=target-now;
+  if(diff<=0){el.textContent="Happy Birthday Muskan! 🎂❤️";return;}
+  const days=Math.floor(diff/86400000);
+  const hours=Math.floor((diff%86400000)/3600000);
+  const mins=Math.floor((diff%3600000)/60000);
+  const secs=Math.floor((diff%60000)/1000);
+  el.textContent=`🎂 ${days}d ${hours}h ${mins}m ${secs}s to Muskan's Birthday`;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);

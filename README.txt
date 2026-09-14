@@ -25,3 +25,19 @@ Use GitHub Pages:
 5. GitHub will give you a shareable link.
 
 Tip: You can rename the repository to something cute, but don't put private information in the URL.
+
+
+## Photos on GitHub (phone)
+1. In your repository, tap **Add file → Upload files**.
+2. Upload `photo1.jpg`, `photo2.jpg`, `photo3.jpg`.
+3. Then edit `index.html` and replace the three `.placeholder` blocks with:
+   `<img src="photo1.jpg" alt="Memory">`
+   `<img src="photo2.jpg" alt="Memory">`
+   `<img src="photo3.jpg" alt="Memory">`
+4. Add this CSS inside `style.css` if needed:
+   `.photo img{width:100%;height:100%;object-fit:cover}`
+5. Commit the changes.
+
+## Music
+Put your chosen MP3 in the repository with the exact name `music.mp3`.
+The music button on the site will play it after Muskan taps the button.
